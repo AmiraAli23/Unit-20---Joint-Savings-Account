@@ -70,6 +70,57 @@ Add a fallback function so that your contract can store ether that’s sent from
 <img width="249" alt="Screen Shot 2022-07-16 at 3 44 41 PM" src="https://user-images.githubusercontent.com/99091066/179369859-d4cd171d-70e3-44cb-b07b-deb59e247a85.png">
 
 
+Once the contract is compiled and deployed, we tested out the features to assess its functionality. 
+
+
+
+## Step 2: Interact with Your Deployed Smart Contract
+
+
+Use the setAccounts function to define the authorized Ethereum address that will be able to withdraw funds from your contract. The dummy accounts below were used:
+
+
+`Dummy account1 address` : 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
+`Dummy account2 address` : 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
+
+
+Test the deposit functionality of your smart contract by sending the following amounts of ether. After each transaction, use the `contractBalance` function to verify that the funds were added to your contract:
+
+
+* Transaction 1: Send 1 ether as wei.
+
+<img width="324" alt="image" src="https://user-images.githubusercontent.com/99091066/179370083-1d80196e-51b3-4f01-9922-c4af4f5e9b86.png">
+
+
+
+* Transaction 2: Send 10 ether as wei.
+
+
+<img width="311" alt="image" src="https://user-images.githubusercontent.com/99091066/179370097-f3987ad3-4833-4597-a7ef-a2bc90f27a8b.png">
+
+
+
+* Transaction 3: Send 5 ether as wei.
+
+<img width="307" alt="image" src="https://user-images.githubusercontent.com/99091066/179370107-88e4ed1d-e49a-4eee-87e1-537806608005.png">
+
+
+
+Test the contract’s withdrawal functionality by withdrawing 5 ether into accountOne and 10 ether into accountTwo. After each transaction, use the contractBalance function to verify that the funds were withdrawn from your contract. Also, use the lastToWithdraw and lastWithdrawAmount functions to verify that the address and amount were correct.
+
+
+
+* Transaction 4: Withdraw 5 ether as wei.
+
+
+<img width="309" alt="image" src="https://user-images.githubusercontent.com/99091066/179370141-82c27cd8-6af2-4897-9087-3bb84c955835.png">
+
+
+* Transaction 5: Withdraw 10 ether as wei.
+
+<img width="284" alt="image" src="https://user-images.githubusercontent.com/99091066/179370161-b1246ef2-b8fc-4202-9d1d-dae06d88d32d.png">
+
+
 
 
 
