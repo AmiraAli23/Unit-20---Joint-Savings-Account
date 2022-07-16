@@ -9,10 +9,6 @@ In this project, we were tasked to create a Solidity smart contract that accepts
 ## Step 1: Create a Joint Savings Account Contract in Solidity
 
 
-
-Define a new contract named JointSavings.
-
-
 Define the following variables in the new contract:
 
 
